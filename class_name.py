@@ -12,26 +12,44 @@
 class Member:
     def __init__(self,name,number_of_songs,list_of_preference,lead_ability,new_member):
         self.__name__ = name
-        self.__number_of_songs__ = number_of_songs
-        self.__list_of_preference__ = list_of_preference
+        self.number_of_songs = number_of_songs
+        self.list_of_preference = list_of_preference
         self.__lead_ability__ = lead_ability
         self.__new_member__ = new_member
         self.song_in = []
         self.leader_of_song = []
+    # After the choosen, add the song that the member will perform officially
     def add_song(self,theSong):
         self.song_in.append(theSong.name)
+    # Add the name of the song if the member is chosen to be the leader of
+    # that song
     def add_leader(self,theSong):
         self.leader_of_song.append(theSong.name)
+    # Check if all the song preference numbers are unique. In other words,
+    # the list_of_preference can't have repeated elements
+    def check_list_of_preference(self):
+        for item in list_of_preference:
+            if item in freq:
+                freq[item] += 1
+            else:
+                freq.(item) = 1
+        for key,value in freq.values:
+            if value>1
+
 
 ## Class Song stores information about the songs selected in the event, such as
 ## name (string), numbers_of_possible_members (list of int), leader (string),
 ## number_of_official_member =
 class Song:
     def __init__(self,name,numbers_of_members):
-        self.__name__ = name
+        self.name = name
         self.numbers_of_possible_members = numbers_of_possible_members
+        self.members = []
+        self.popularity = 0
         self.number_of_official_member = 0
     def add_leader(member):
         self.__leader__ = member.name
-    def add_member():
-        self.number_of_official_member += 1
+    def add_member(member):
+        self.members.append(member)
+    def num_member(num):
+        self.number_of_official_member = num
