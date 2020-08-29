@@ -7,7 +7,7 @@
 ## of preference. This class also contains the information about the members
 ## such as they are new members or they can lead the song
 ## attributes: name (string), number_of_songs (int), list_of_preference
-## (list of int), lead_ability (list of numbers), new_member, song_in
+## (list of int), lead_ability (list of string), new_member, song_in
 ## (list of string), leader_of_song (list of string)
 class Member:
     def __init__(self,name,number_of_songs,list_of_preference,lead_ability,new_member):
@@ -25,17 +25,8 @@ class Member:
     # that song
     def add_leader(self,theSong):
         self.leader_of_song.append(theSong.name)
-    # Check if all the song preference numbers are unique. In other words,
-    # the list_of_preference can't have repeated elements
-    def check_list_of_preference(self):
-        for item in list_of_preference:
-            if item in freq:
-                freq[item] += 1
-            else:
-                freq.(item) = 1
-        for key,value in freq.values:
-            if value>1
-
+    def get_name(self):
+        return self.__name__ 
 
 ## Class Song stores information about the songs selected in the event, such as
 ## name (string), numbers_of_possible_members (list of int), leader (string),
